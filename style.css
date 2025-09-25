@@ -1,0 +1,292 @@
+/* Global reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden; /* prevent sideways scroll */
+  font-family: sans-serif;
+}
+
+/* Navbar */
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.logo {
+  margin: 20px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.list ul li {
+  display: inline;
+  list-style: none;
+}
+
+.list a {
+  text-decoration: none;
+  color: black;
+}
+
+.list ul li a {
+  margin: 15px;
+  font-size: 20px;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.list ul li a:hover {
+  color: blue;
+}
+
+/* Hero Section */
+.hero {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  border-bottom: 1px solid black;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.hero img {
+  max-width: 100%;
+  height: auto;
+}
+
+.hero h3 {
+  font-size: 55px;
+  max-width: 700px;
+  margin: 20px auto;
+  line-height: 1.2;
+}
+
+.hero p {
+  font-size: 20px;
+  max-width: 400px;
+  margin: 20px auto;
+}
+
+/* Blog Section */
+.blog {
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.cards {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  column-gap: 25px;
+  flex-wrap: wrap;
+}
+
+.cards p {
+  width: 300px;
+  margin: 10px auto 20px auto;
+}
+
+/* Footer */
+footer {
+  width: 100%;
+  background-color: black;
+  color: white;
+  padding: 40px 20px;
+  box-sizing: border-box;
+}
+
+footer > marquee > span {
+  font-size: 30px;
+  margin-left: 10px;
+}
+
+footer > h2 {
+  text-align: center;
+  margin-top: 80px;
+  font-size: 40px;
+  letter-spacing: 5px;
+}
+
+footer > p {
+  text-align: center;
+  max-width: 420px;
+  margin: 20px auto;
+  font-size: 20px;
+}
+
+footer .visit {
+  text-align: center;
+  margin-top: 20px;
+  word-spacing: 20px;
+  text-transform: capitalize;
+  font-size: 20px;
+}
+
+footer .end {
+  margin-top: 120px;
+  text-align: center;
+}
+
+/* Other Sections */
+.dp {
+  margin: auto;
+  max-width: 800px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main {
+  font-size: 25px;
+}
+
+.paragraph-1 {
+  margin: 30px auto;
+  max-width: 700px;
+  text-align: center;
+}
+
+.paragraph-2 {
+  margin: auto;
+  text-align: center;
+}
+
+.paragraph-2 h2 {
+  margin-top: 35px;
+  font-size: 35px;
+}
+
+.paragraph-2 img {
+  margin-top: 40px;
+}
+
+.blog-item ul li {
+  margin-top: 30px;
+  color: black;
+  font-weight: 100;
+  text-align: center;
+}
+
+.facebook {
+  display: flex;
+  justify-content: space-between;
+}
+
+.mika {
+  display: flex;
+  justify-content: center;
+  max-width: 800px;
+  margin: auto;
+}
+
+.mika img {
+  margin: 10px;
+  width: 10rem;
+  height: 5rem;
+}
+
+.mika span {
+  margin-bottom: 30px;
+}
+
+.next {
+  border-top: 2px solid black;
+}
+
+.next h2 {
+  text-align: center;
+  font-size: 50px;
+  font-weight: bolder;
+  margin: 50px;
+}
+
+.next-image {
+  margin: auto;
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  column-gap: 80px;
+  flex-wrap: wrap;
+}
+
+.next-image div p {
+  max-width: 330px;
+  margin: 10px auto 30px auto;
+}
+
+.form {
+  margin: auto;
+  margin-bottom: 5rem;
+  text-align: center;
+  width: 100%;
+  max-width: 600px;
+  border: 2px solid black;
+  border-top: 5px solid black;
+  padding: 20px;
+}
+
+.form h2 {
+  font-size: 40px;
+  margin: 50px 0 10px 0;
+}
+
+.form input {
+  margin: 20px 0 30px 0;
+  height: 25px;
+  width: 240px;
+  padding: 5px;
+}
+
+.form button {
+  height: 35px;
+  width: 100px;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+/* Mobile Styles */
+@media (max-width: 500px) {
+  .list {
+    display: none;
+  }
+
+  .hero h3 {
+    font-size: 28px;
+    max-width: 90%;
+  }
+
+  .hero p {
+    font-size: 16px;
+    max-width: 90%;
+  }
+
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cards div {
+    width: 90%;
+  }
+
+  footer {
+    text-align: center;
+    padding: 20px;
+  }
+}
